@@ -21,11 +21,11 @@
   }
 
   .bg-light {
-    background-color: var(--aw-color-bg-page);
+    background-image: linear-gradient(to top, rgb(219, 234, 254), rgb(147, 197, 253), rgb(59, 130, 246));
   }
 
   .bg-dark {
-    @apply bg-neutral-900;
+    background-image: linear-gradient(to top, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
   }
 
   
@@ -40,10 +40,6 @@
   .btn-primary {
     @apply font-semibold bg-primary text-white border-primary hover:bg-zinc-900 hover:border-zinc-900 hover:text-[#e8dede] dark:text-[#18181b] dark:bg-[#e8dede] dark:border-[#e8dede] dark:hover:border-[#e8dede] dark:hover:bg-[#e8dede];
   }
-}
-
-#header.scroll {
-  @apply shadow-md md:shadow-lg bg-[#e8dede] md:bg-[#e8dede]/90 md:backdrop-blur-sm dark:bg-neutral-900 dark:md:bg-neutral-900/90;
 }
 
 .dropdown:hover .dropdown-menu {
