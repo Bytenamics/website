@@ -1,5 +1,6 @@
 {
   "name": "anish-shobith",
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
