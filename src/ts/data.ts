@@ -3,16 +3,16 @@ import { getPermalink } from '~/ts/utils';
 export const headerData = {
   links: [
     {
-      text: 'Features',
-      href: getPermalink('/features'),
+      text: 'Tracking',
+      href: getPermalink('/tracking'),
     },
     {
-      text: 'Sign Up',
-      href: getPermalink('/signup'),
+      text: 'Create',
+      href: getPermalink('/create'),
     },
     {
-      text: 'Login',
-      href: getPermalink('/login'),
+      text: 'Update Status',
+      href: getPermalink('/status'),
     }
   ]
 };

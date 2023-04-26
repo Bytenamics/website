@@ -1,0 +1,41 @@
+---
+import { SITE } from '~/ts/config';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Steps from '~/components/widgets/Steps.astro';
+
+const items = await fetch('http://localhost:3001/api/').then(res => res.json());
+const datas = items.map(item => {
+    return {
+        name: item.name,
+        type: item.type,
+        submittedDate: item.submittedDate,
+        status: item.status.map(pos => {
+            return {
+            title: pos.name,
+            description: pos.description,
+            icon: pos.name === 'Submitted' ? 'status/submit' : pos.name === 'Processing' ? 'mdi:comment-processing' : 'status/accept',
+            time: new Date(pos.date).toDateString(),
+            }
+        }),
+    }
+});
+
+const meta = {
+  title: SITE.title,
+  description: SITE.description,
+  dontUseTitleTemplate: true,
+};
+---
+<Layout {meta}>
+    {
+        datas.map((data) => (
+            <Steps
+                title={data.name}
+                subtitle={'Type : ' + data.type + '<br />Date Submitted : ' + new Date(data.submittedDate).toDateString()}
+                items={data.status}
+            />
+            )
+        )
+    }
+</Layout>

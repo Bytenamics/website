@@ -1,12 +1,12 @@
 import defaultImage from '../assets/images/default.png';
 
 const CONFIG = {
-  name: 'Anish Shobith P S',
-  origin: 'https://anishshobithps.is-a.dev',
+  name: 'TrackDoc',
+  origin: 'http://localhost:3000',
   basePathname: '/',
   trailingSlash: false,
-  title: 'Anish Shobith P S',
-  description: 'Portfolio of Anish Shobith P S',
+  title: 'TrackDoc',
+  description: 'Official website of TrackDoc',
   defaultImage: defaultImage,
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
   language: 'en',

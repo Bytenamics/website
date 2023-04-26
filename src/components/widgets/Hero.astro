@@ -62,7 +62,7 @@ const {
         </div>
         {content && <Fragment set:html={content} />}
       </div>
-      <Lottie src={HeroLottie} client:visible loop/>
+      <Lottie src={HeroLottie} client:only="preact" loop/>
     </div>
   </div>
 </section>
