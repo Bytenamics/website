@@ -1253,6 +1253,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/forms@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "@tailwindcss/forms@npm:0.5.3"
+  dependencies:
+    mini-svg-data-uri: ^1.2.3
+  peerDependencies:
+    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
+  checksum: 9eddb4dbd06d01b1068138ff52a54ed0e35a28e7bfd3c72e226fc28658ecd92a9c078c4abe9c83db090984672040644d7ae2e035933fb619dd703df1d87aa275
+  languageName: node
+  linkType: hard
+
 "@tailwindcss/typography@npm:^0.5.9":
   version: 0.5.9
   resolution: "@tailwindcss/typography@npm:0.5.9"
@@ -1875,6 +1886,7 @@ __metadata:
     "@fontsource/inter": ^4.5.15
     "@lucia-auth/adapter-prisma": ^2.0.0
     "@prisma/client": ^4.13.0
+    "@tailwindcss/forms": ^0.5.3
     "@tailwindcss/typography": ^0.5.9
     "@types/babel__core": ^7.20.0
     "@types/eslint": ^8
@@ -7389,7 +7401,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mini-svg-data-uri@npm:^1.4.4":
+"mini-svg-data-uri@npm:^1.2.3, mini-svg-data-uri@npm:^1.4.4":
   version: 1.4.4
   resolution: "mini-svg-data-uri@npm:1.4.4"
   bin:

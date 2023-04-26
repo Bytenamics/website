@@ -30,11 +30,13 @@ const meta = {
 <Layout {meta}>
     {
         datas.map((data) => (
+            <div id={data.name}>
             <Steps
                 title={data.name}
                 subtitle={'Type : ' + data.type + '<br />Date Submitted : ' + new Date(data.submittedDate).toDateString()}
                 items={data.status}
             />
+        </div>
             )
         )
     }
